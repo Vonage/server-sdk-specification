@@ -19,7 +19,7 @@ Chris Tankersley
 JWT authentication is being used on newer APIs being deployed by Vonage as it provides a finer grain of control over authorization between clients. New applications being developed using APIs such as Messages or Conversations are increasingly being developed by outside teams such as Pre-Sales, and there is a large need for generating JWTs easily. Vonage currently offeres two solutions:
 
 * `vonage/cli`, which can generate JWTs
-* `vonage-java-jwt`, which can generate JWTs in Java
+* `vonage-jwt-jdk`, which can generate JWTs in JVM-based languages ([link to repo](https://github.com/Vonage/vonage-jwt-jdk))
 
 These solutions do not cover the full gamut of with internal teams need, and as we can track via API usage we have a large set of customers using our APIs outside of the Java landscape. Many customers do not use our SDKs as they are implementing our Developer Preview or Beta level products, which do not include SDK support. While customers could introduce our SDKs as dependencies, this introduces a large dependency for a small need. Many customers do not want this.
 
