@@ -167,7 +167,7 @@ $header = $request->getHeaderLine('Authorization');
 $token = substr($header, 0, 7);
 
 // Check the validity against the customer's Signature Secret string from the dashboard
-$isValid = TokenGenerator::verifySignature($header, $signatureSecret)
+$isValid = TokenGenerator::verifySignature($token, $signatureSecret)
 ```
 
 ### Further API JWT documentation:
